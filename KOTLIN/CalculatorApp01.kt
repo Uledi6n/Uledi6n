@@ -21,6 +21,13 @@ class MainActivity : AppCompatActivity() {
             gravity = Gravity.CENTER
             setPadding(16)
         }
+        val tlview=TextView(this).apply{
+            text="Uledi Calculator"
+            textSize = 32f
+            setTypeface(null, Typeface.BOLD)
+            
+        }
+        layout.addView(tlview)
 
         // TextView at the top
         val txt = TextView(this).apply {
